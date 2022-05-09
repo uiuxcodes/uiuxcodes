@@ -5,7 +5,7 @@
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "bootstrap"
+    "tb5"
   ],
   "engines": {
     "node": ">=12"
@@ -16,9 +16,9 @@
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build && npm run style",
-    "sass": "sass bootstrap/style.scss dist/uiuxcodes.bootstrap.css",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 tb5 -o dist/uiuxcodes.bootstrap",
     "size": "size-limit",
-    "style": "npm run sass && cssnano dist/uiuxcodes.bootstrap.css dist/uiuxcodes.bootstrap.min.css --no-zindex --no-reduceIdents",
+    "style": "npm run css-compile && cssnano dist/uiuxcodes.bootstrap/style.css dist/uiuxcodes.bootstrap/style.min.css --no-zindex --no-reduceIdents",
     "analyze": "size-limit --why"
   },
   "husky": {
@@ -34,8 +34,8 @@
   },
   "name": "uiuxcodes",
   "author": "maxifjaved",
-  "style": "dist/uiuxcodes.bootstrap.min.css",
-  "sass": "bootstrap/style.scss",
+  "style": "dist/uiuxcodes.bootstrap/style.min.css",
+  "sass": "tb5/style.scss",
   "module": "dist/uiuxcode.esm.js",
   "size-limit": [
     {
