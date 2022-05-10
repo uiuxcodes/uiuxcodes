@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/logo.png" width="400" height="175" alt="uiuxcodes logo">
+  <img src="https://assets.uiuxcodes.com/images/uiuxcodes-dark-logo.png" width="400" height="175" alt="uiuxcodes logo">
 </p>
 
 <h1 align="center">uiuxcodes</h1>

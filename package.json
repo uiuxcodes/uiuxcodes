@@ -3,7 +3,6 @@
   "license": "MIT",
   "main": "dist/bootstrap/style.css",
   "files": [
-    ".github/logo.png",
     "dist/bootstrap",
     "bootstrap"
   ],
