@@ -22,8 +22,11 @@ npm i uiuxcodes
 # if node_modules not resolved via above
 @import '~uiuxcodes/bootstrap/style.scss';
 
+
 # Usage with css files
 @import 'uiuxcodes/dist/bootstrap/style.css';
+# You can also use minified version
+@import 'uiuxcodes/dist/bootstrap/style.min.css';
 ```
 
 ## Support

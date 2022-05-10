@@ -1,8 +1,7 @@
 {
   "version": "0.0.6",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/bootstrap/style.css",
   "files": [
     ".github/logo.png",
     "dist/bootstrap",
@@ -16,7 +15,7 @@
     "build": "npm run prepare",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build && npm run style",
+    "prepare": "npm run style",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 bootstrap -o dist/bootstrap",
     "size": "size-limit",
     "style": "npm run css-compile && cssnano dist/bootstrap/style.css dist/bootstrap/style.min.css --no-zindex --no-reduceIdents",
@@ -37,17 +36,6 @@
   "author": "maxifjaved",
   "style": "dist/bootstrap/style.min.css",
   "sass": "bootstrap/style.scss",
-  "module": "dist/uiuxcode.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/uiuxcode.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/uiuxcode.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
     "cssnano": "^5.1.7",
