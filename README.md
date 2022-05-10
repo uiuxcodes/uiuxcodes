@@ -9,7 +9,7 @@
 ## Installation
 
 ```shell
-yarn i uiuxcodes
+yarn add uiuxcodes
 OR
 npm i uiuxcodes
 ```
@@ -23,7 +23,7 @@ npm i uiuxcodes
 @import '~uiuxcodes/bootstrap/style.scss';
 
 
-# Usage with css files
+# Usage with css files - NOTE: THIS IS BROKEN FOR NOW
 @import 'uiuxcodes/dist/bootstrap/style.css';
 # You can also use minified version
 @import 'uiuxcodes/dist/bootstrap/style.min.css';
