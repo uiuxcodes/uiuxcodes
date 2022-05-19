@@ -6,28 +6,10 @@
 
 <h3 align="center">Start your next project with pre-defined moderan design component</h3>
 
-## Installation
+#
 
-```shell
-yarn add uiuxcodes
-OR
-npm i uiuxcodes
-```
+# This package is no longer maintained. Please use [@uiuxcodes/bootstrap](https://www.npmjs.com/package/@uiuxcodes/bootstrap) instead.
 
-## Usage For Bootstrap 5
-
-```scss
-# Usage with scss files, you can omit the .scss extension
-@import 'uiuxcodes/bootstrap/style.scss';
-# if node_modules not resolved via above
-@import '~uiuxcodes/bootstrap/style.scss';
-
-
-# Usage with css files - NOTE: THIS IS BROKEN FOR NOW
-@import 'uiuxcodes/dist/bootstrap/style.css';
-# You can also use minified version
-@import 'uiuxcodes/dist/bootstrap/style.min.css';
-```
 
 ## Support
 
